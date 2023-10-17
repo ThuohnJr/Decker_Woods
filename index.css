@@ -1,6 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,200;0,500;1,100;1,300&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,100;1,700&family=Tsukimi+Rounded:wght@300;400;700&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&display=swap');
 
 
 *{
@@ -25,53 +22,79 @@ a{
     text-decoration: none;
 }
 /*Main page*/
-.logo{
+.main-title{
 text-align: center;
 color: #ffffff; 
 background-color:#CC7722 ;
-margin-bottom: 40px;
-border-radius: 0 0 50px 50px;
-padding: 1px;  
+margin-top:0;
+border-radius: 0 0 20px 20px;
+padding: 20px;  
 
 }
+.main-title:hover {
+color: #cc7722;
+background: wheat;
+}
 
-.header{
-   font-size:4.6rem;
+.main-title-1{
+   font-size:4em;
    text-align: center; 
    font-family: 'Cinzel', serif;
    }
-   .mantra{
-    font-size: 2.2em;
+   .main-title-2{
+    font-size: 2em;
     text-align: center;
    }
-   @media(max-width:360px){
-    .logo{
-        margin-bottom: 5px;
+   @media(max-width:1131px){
+    .main-title-1{
+        font-size: 3.5em;
     }
-    .header{
-        font-size: 2rem;
+    .main-title-2{
+        font-size: 1.6em;
     }
-    .mantra{
-        font-size: 1.4rem;
     }
-   }
+    @media(max-width:995px){
+        .main-title-1{
+            font-size: 3em;
 
-*a:hover{
-    color: #fff;
-}
-.nav{
-    display: flex;
-    flex-direction: row; 
-}
+        }
+        .main-title-2{
+            font-size:1.2em;
+
+        }
+    }
+    @media(max-width:860px){
+        .main-title-1{
+            font-size: 2.5em;
+
+        }
+        .main-title-2{
+            font-size:0.9em;
+
+        }
+    }
+    @media(max-width:722px){
+        .main-title-1{
+            font-size: 2.2em;
+
+        }
+        .main-title-2{
+            font-size:0.9em;
+
+        }
+    }
+
+
 
 .nav-bar{
    display: flex;
    flex-direction: row;
    justify-content: space-evenly;
    align-items: center;
-    padding: 40px;
+    padding: 20px;
     margin: 20px;
-    gap: 40px;
+    gap: 20px;
+    font-size: 2em;
    } 
    @media(max-width:360px){
     .nav-bar{
@@ -89,7 +112,7 @@ padding: 1px;
    .nav-home:hover,.nav-products:hover,.nav-services:hover,.nav-news:hover,.nav-about:hover{
     background-color: coral;
     color: #fff;
-    padding: 10px;
+    font-size: ;
  
    }
    .products{
@@ -168,6 +191,21 @@ float: left;
     font-size: 1.7rem;
 
 }
+@media(max-width:621px){
+    .on-sale-title{
+        font-size: 1.2em;
+    }
+}
+@media(max-width:468px){
+    .on-sale-title{
+        font-size: 1.0em;
+    }
+}
+@media(max-width:406px){
+    .on-sale-title{
+        font-size: 0.8em;
+    }
+}
 .onsale{
     display: flex;
     flex-direction: row;
@@ -196,6 +234,19 @@ float: left;
     width: 100%;
     min-width: 300px;
     height: 400px;
+}
+@media(max-width:650px){
+    .on-sale-items1,.on-sale-items2{
+        display: flex;
+        flex-direction: column;
+        gap:3px;
+        margin: 3px;
+        padding: 10px;
+    }
+    .on-sale-items1 > div,.on-sale-items2 > div{
+        padding: 10px;
+        border-bottom: 0.1px groove lightgray;
+    }
 }
 .sale {
   animation: blinker 2s linear infinite;
@@ -237,7 +288,7 @@ float: left;
     flex-direction: column;
     gap: 30px;
     padding: 20px;
-    margin: 50px;
+    margin: 10px;
 
 }
 .product-title{
@@ -251,35 +302,10 @@ float: left;
     margin-bottom: 0;
     background-color: coral;
     font-size: 3em; 
-font-family: raleway;
+font-family: raleway; 
 
 }
-@media(max-width:360px){
-    .corporate{
-        display: flex;
-        flex-direction: column;
-        padding: 5px;
-        margin: 5px; 
-    }
-    .commercial-1,.commercial-2{
-        display: flex;
-        flex-direction: column;
-        padding: 5px;
-        margin: 5px;
-       
-             }
-    .corporate1,.corporate2{
-        display: flex;
-        flex-direction: column;
-        padding: 5px;
-        margin: 5px;
-        align-items: center;
-        
-         } 
-         #main-img{
-            width: 100%;
-         }
-}
+
 .promo{
     display: flex;
     align-items: center; 
@@ -441,21 +467,24 @@ position: absolute;
     display: flex;
     flex-direction: row; 
     padding: 30px;
-    margin: 50px;
+    margin: 30px;
     margin-bottom: 0;
     margin-top: 0;
     gap: 20px;
     justify-content:space-evenly ;
 }
-
+.domestic{
+    width: 100%; 
+}
 .domestic-1,.domestic-2{
-    display: flex;
-    flex-direction: row;
-    padding: 40px;
+     display: flex;
+    flex-direction: row; 
+    padding: 30px;
     margin: 30px;
+    margin-bottom: 0;
+    margin-top: 0;
     gap: 20px;
-    align-items: center;
-    justify-content: space-around;
+    justify-content:space-evenly ;
 }
 .challenge{
     display: flex;
@@ -465,10 +494,9 @@ position: absolute;
    box-sizing: border-box;
 }
 img{
-    width:100%;
-    min-width:330px;
-    height: 300px;
-   }
+    width: 100%;
+    height: 400px;
+}
 .title{
     text-align: center;
     font-size: 1.5em;
@@ -661,19 +689,7 @@ overflow: hidden;
     flex-direction: row;
     font-family: Tsukimi Rounded,sans-serif;
 }
-.corporate{
-    justify-content: center;
-}
-.commercial-1{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 0;
-}
-.commercial-2{
-    display: flex;
-    flex-direction: column;
-    margin-top: 0;
-}
+
 .domestic-1{
     display: flex;
     flex-direction: column;
@@ -683,12 +699,7 @@ overflow: hidden;
     flex-direction: column;
     margin-top: 0;
 }
-.corporate{
-    width: 100%;
-   }
-   .corporate img{
 
-   }
    .message {
   background-color: yellow;
   color: #333;
@@ -790,15 +801,9 @@ position: absolute;
     flex-direction: column;
     text-align: center;
 }
-.about1{
-    font-size: 4rem;
-    font-family: Quicksand,sans-serif;
-    padding: 40px;
-    margin: 30px;
 
-
-}
 .about2{
 font-family: raleway,sans-serif;
 font-size: 2em;
+color: olivedrab;
 }
